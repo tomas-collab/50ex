@@ -1,0 +1,38 @@
+body{
+    width: 100%;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+a.color{
+color: gold;
+}
+
+table, tr, td{
+    border: 1px solid black;
+    border-radius: 5%;
+    
+}
+
+p{
+    margin-bottom: 30px;
+}
+
+.bold{
+
+}
+
+.hide{
+    
+}
+
+.border{
+    border-color: green;
+}
+tr.border_bottom{
+    border-bottom: 1px dotted;
+    color: red;
+}

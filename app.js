@@ -15,7 +15,7 @@
 
 x = 'John'
 y = 'Doe'
-console.log(`${x} <> ${y}`) 
+console.log(`${x} <> ${y}`) //ex.22
 
 
 let person= {
@@ -23,5 +23,10 @@ let person= {
     surname:'Doe',
     email: 'Johndoe@gmail.com'
 }
-console.log(person)
+console.log(person)  //ex.23
+
+delete person.email
+console.log(person) //es.24
+
+array = ['1','2','3','4','5','6','7','8','9','10']
 

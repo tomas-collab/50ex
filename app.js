@@ -38,15 +38,43 @@ console.log(array)   //ex.26
 
 //----------------------------------------------------------------------//
 
-    console.log(Math.max(...array)) //ex.27
+console.log(Math.max(...array)) //ex.27
 
 //----------------------------------------------------------------------//
 
 
+let array1 = [1,5,8,3,2,7,2,43,7,6]
+let array2= [2,8,5,3,33,7,8,90,0,3] //ex.28
+
+//----------------------------------------------------------------------//
+const arrayOne = [1,5,8,3,2,7,2,43,]
+const arrayTwo=  [1,5,8,3,2,9,2,43,7,6]
+function longestArray(x,y){
+
+    if( x.length > y.length){
+        return x
+    }else if (x.length < y.length ){
+        return y
+    }else{
+        console.log('they are equal')
+    }
+}
+
+console.log(longestArray(arrayOne,arrayTwo)) // ex.29
+//----------------------------------------------------------------------//
+
+function higherSum(x,y){
+    let a = arrayOne.reduce((a,b)=>a+b,0)
+    let b = arrayTwo.reduce((a,b)=>a+b,0)
+    if(a > b){
+        a
+    }else{
+        return b
+    }
+
+}
+console.log(higherSum(arrayOne,arrayTwo)) //ex.30
 
 
 //----------------------------------------------------------------------//
 
-
-
-//----------------------------------------------------------------------//

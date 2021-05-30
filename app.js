@@ -73,42 +73,89 @@ console.log(line)
 
 
 
+document.addEventListener('DOMContentLoaded',()=>{
+
+    // DOM 
 
 
-// DOM 
 
 // 31) Get element with ID "container" from the page
 document.getElementById('container')
-console.log(line)
+
 //----------------------------------------------------------------------//
 // 32) Get every "td" from the page
-document.querySelectorAll('td')
-console.log(line)
+const td = document.querySelectorAll('td')
+
 //----------------------------------------------------------------------//
 // 33) Create a cycle that prints the text inside every td of the page
-console.log(line)
+// td.forEach((td)=>{
+//     td.innerText = 'changed'
+// })
+
 //----------------------------------------------------------------------//
 // 34) Write a function to change the heading of the page
-console.log(line)
+function changeHeading(){
+const h1 = document.querySelector('h1')
+h1.innerText = "I have been changed :)"
+}
+changeHeading()
+
 //----------------------------------------------------------------------//
 // 35) Write a function to add an extra row to the table
-console.log(line)
+function addRow(){
+    const table = document.querySelector('table')
+    const tr = document.createElement('tr')
+    for(let i=0;i<5;i++){
+        const td = document.createElement('td')
+        td.innerText = i + 1
+        tr.appendChild(td)
+    }
+    table.appendChild(tr)
+}
+addRow()
+
 //----------------------------------------------------------------------//
 // 36) Write a function to add the class "test" to each row in the table
-console.log(line)
+function addClassRow(){
+ const rows = document.querySelectorAll('tr')
+ rows.forEach((tr)=>{
+     tr.classList.add('test')
+ })
+}
+addClassRow()
 //----------------------------------------------------------------------//
 // 37) Write a function to add a red background to every link in the page
-console.log(line)
+function linkRed(){
+const aRed = document.querySelectorAll('a')
+aRed.forEach((a)=>{
+ a.classList.add('.border_bottom')
+})
+}
+linkRed()
 //----------------------------------------------------------------------//
 // 38) Console log "Page loaded" when the page is correctly loaded
-console.log(line)
+window.onload = function(){
+    console.log('page loaded')
+}
 //----------------------------------------------------------------------//
 // 39) Write a function to add new items to a UL
-console.log(line)
+function addUl(){
+const ul= document.querySelector('ul')
+const li = document.createElement('li')
+li.innerText = 'added unordered list'
+ul.append(li)
+}
+addUl()
 //----------------------------------------------------------------------//
 // 40) Write a function to empty a list
-console.log(line)
+
 //----------------------------------------------------------------------//
+
+})
+
+
+
+
 
 
 console.log(`${'--'*10}`)

@@ -9,6 +9,7 @@ h1{
 
 a.color{
 color: gold;
+background-color: red;
 }
 
 table, tr, td{
@@ -32,7 +33,10 @@ p{
 .border{
     border-color: green;
 }
-tr.border_bottom{
+.border_bottom{
     border-bottom: 1px dotted;
-    color: red;
+    border-bottom-color: red;
+   
 }
+
+
